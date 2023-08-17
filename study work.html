@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>kennedy study guide!</h1>
+</body>
+<script>
+    let val = 'kennedy'
+    let dd = 'rhone'
+    let combine = val + dd
+    console.log(combine)
+
+    let file = { firstname: 'kennedy', lastname: 'rhone', age: 19 }
+    for (let i in file) {
+        console.log(file[i])// file i gives the vsalue just i returns the properties
+    }
+    let countDown = 5;
+    while (countDown >= 0) {
+        console.log(countDown);
+        countDown--;
+    }
+    function stripChar(str, cha) { // strips characters from string like split.'f''o''o''l' cha is the value
+        let result = []
+        let ev = str.split('')
+        for (let idx in ev) {
+            let character = ev[idx]
+
+            if (character !== cha) {
+                result[result.length] = character
+            }
+
+        }
+        return result.join('')
+    }
+    function stripX(str) { //removes x from an word with x
+        let result = []
+        let fellow = str.split('')
+        for (let i in fellow) {
+            let char = fellow[i]
+            if (char !== 'x') {
+                result[result.length] = char
+            }
+        }
+        return result.join('')
+    }
+    function getProps(obj) { //remove obj values
+        let result = []
+        for (let key in obj) {
+            if (key !== 'age' && key !== 'married') {
+                result[result.length] = key
+            }
+        }
+        return result
+    }
+function beval(str){
+let result =[];
+let deprive =str.split()
+for(let i in string){
+    let ken = deprive[i]
+    if(ken !=='j'){
+return result[result.length] = ken
+    }
+}
+}
+function stripVowels(str) {
+let result= []
+      let strip= str.split('')
+      
+for(let i =0; i < strip.length; i++){
+  let ken = strip[i]
+  if(ken !=='a' && ken !=='e' && ken !=='i' && ken !=='o'&& ken !=='u'){
+    result.push(ken)
+  }  
+  } return result.join('')
+}
+</script>
+
+</html>
