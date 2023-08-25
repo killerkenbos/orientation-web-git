@@ -78,7 +78,39 @@ for(let i =0; i < strip.length; i++){
     result.push(ken)
   }  
   } return result.join('')
+
+  for (let key in object) {
+
+console.log(`${key}: ${object[key]}`);
+if (key.length > 9) {
+  return "shorten all prop names to 9 chars or less"
 }
+if (object[key] === null) {
+  delete object[key]
+}
+if (object[key] === 1) {
+  object[key] = true
+}
+if(object[key] === 0){
+object[key] = false
+}
+}
+return object
+}
+let result = []
+let bring =str.split(' ')
+for(let i in bring){
+let currentword =bring[i]
+console.log(`${bring[i]}: ${arr.indexOf(currentword)}`)
+if(arr.indexOf(currentword) > -1){
+let equivalent = new Array(currentword.length).fill('x').join('')
+result.push(equivalent)
+} else {
+  result.push(currentword)
+}
+}
+return result.join(' ')
+    
 </script>
 
 </html>
